@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suyog Sable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/siws5.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!-- Course Section -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>"Embark on a journey of knowledge and discovery with our diverse range of courses, designed to shape your academic path and ignite your passion for learning."</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Junior College CS</h3>
+                <p>At our junior college, the Computer Science program is a gateway to the tech world. Our hands-on curriculum covers programming, data structures, and software development. Expert faculty guide students in mastering cutting-edge technologies. Whether aspiring to be a software developer, data analyst, or tech innovator, our program equips students for success in the ever-evolving tech landscape.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>At our degree college, our Computer Science program offers advanced courses, cutting-edge research opportunities, and expert faculty guidance. Students gain in-depth knowledge of programming, data analysis, artificial intelligence, and cybersecurity. With state-of-the-art labs and real-world projects, we prepare graduates for careers as software engineers, data scientists, and tech innovators. Join us to thrive in the dynamic landscape of technology.</p>
+            </div>
+            <div class="course-col">
+                <h3>I.T</h3>
+                <p>At our college, the IT department leads digital innovation with robust infrastructure, cybersecurity measures, and tech support. We ensure a tech-savvy campus environment, empowering students and faculty to harness technology's full potential. Our dedicated team stays at the forefront of emerging trends, optimizing digital resources for academic and administrative needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>"Explore our outstanding college facilities that are designed to enhance your academic and campus experience."</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/siws3.jpg" alt="Class Library">
+                <h3>Class Library</h3>
+                <p>The college boasts a state-of-the-art study library, meticulously curated to provide students with an enriching learning environment. Our library houses an extensive collection of books, research materials, and digital resources, catering to a wide range of academic disciplines. It's a quiet haven where students can immerse themselves in their studies, conduct research, and collaborate with peers. With comfortable seating, modern technology, and a dedicated staff, our library is a hub for academic excellence, fostering a culture of lifelong learning and intellectual growth.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/siws2.jpeg" alt="Tasty And Healthy Food">
+                <h3>Tasty And Healthy Food</h3>
+                <p>Our college cafeteria offers students a convenient dining option with affordable and healthy food choices. We strive to provide students with nutritious meal options that won't break the bank. While our cafeteria may not offer an extensive gourmet menu, it is committed to promoting a healthy eating environment for our students, ensuring that they have access to balanced and budget-friendly meals.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/siws4.jpg" alt="Play Ground">
+                <h3>Play Ground</h3>
+                <p>Embracing a culture of physical fitness and athletic excellence, our college offers top-tier sports facilities, including a well-maintained football turf and a state-of-the-art basketball court. Our football turf provides a pristine playing surface for enthusiasts to enjoy the beautiful game. Additionally, our basketball turf is equipped with modern amenities, ensuring an exciting and competitive atmosphere for basketball enthusiasts. These facilities are more than just places to play; they are hubs for teamwork, competition, and personal growth, fostering a sense of camaraderie and sportsmanship among our students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>CREATED BY SUYOG SABLE <br> ROLL NUMBER - 38023 <br> E-mail - suyogsable3@gmail.com</p>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        const menuIcon = document.querySelector(".fa-bars");
+        const closeIcon = document.querySelector(".fa-times");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuIcon.addEventListener("click", function () {
+            navLinks.style.display = "block";
+            menuIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        });
+
+        closeIcon.addEventListener("click", function () {
+            navLinks.style.display = "none";
+            menuIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        });
+    </script>
+</body>
+</html>

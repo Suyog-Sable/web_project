@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>suyog sable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+<section class= "sub-header">
+    <nav>
+        <a href= "index.html"><img src="images/siws5.png"></a>
+        <div class ="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+
+
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Cyber Security Workshop </h1>
+    
+    
+</section>
+    
+<!------blog page content------>
+
+<section class ="bolg-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src ="images/security.jpeg">
+            <h2>"defensive side" v/s "offensive side" </h2>
+            
+            <p>
+
+In our interconnected world, safeguarding your digital presence is no longer an option; it's a necessity. This concise guide distills key cybersecurity concepts from our recent workshop, empowering you to protect your online realm effectively.
+
+At the heart of cybersecurity lies the CIA Triad: Confidentiality, Integrity, and Availability. Confidentiality ensures your data remains private, while integrity guarantees its accuracy, and availability ensures you can access it when needed.
+
+The OSI Model provides a structured approach to network security. Comprising seven layers, it's the framework that underpins secure communication across the web.
+
+When it comes to data transmission, you must understand the contrast between TCP (Transmission Control Protocol) and UDP (User Datagram Protocol). TCP prioritizes reliability, while UDP offers speed—know when to deploy each for optimal security.
+
+The TCP handshake, a crucial element in secure connections, involves the exchange of SYN, SYN-ACK, and ACK packets. This process ensures a stable and secure connection between devices.
+
+SSL/TLS (Secure Sockets Layer/Transport Layer Security) is the bedrock of data encryption in transit. Without it, sensitive information is vulnerable. Understanding the importance of SSL/TLS is vital for any online user.
+
+Delving deeper into the world of encryption, we explore synchronous and asynchronous keys. These encryption keys are essential components of data security, and grasping their differences empowers you to protect your digital assets.
+
+Access control is the linchpin of cybersecurity. Implementing robust access control measures ensures that only authorized individuals can access your data, systems, and resources.
+
+Multi-Factor Authentication (MFA) adds an extra layer of security to your online accounts. By using methods like one-time passwords (OTPs), biometrics, and smart cards, you enhance login security and protect your digital identity.
+
+In conclusion, this guide equips you with the knowledge and tools to navigate the digital world securely. Empower yourself with these cybersecurity essentials and embrace the digital age with confidence.</p>
+            
+            
+            
+            <div class="comment-box">
+                
+                <h3>Leave a comment</h3>
+                <form class ="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter E-mail">
+                    <textarea rows="5" placeholder="your Comment">
+                    </textarea>
+                    <button type ="submit" class="hero-btn red-btn">Post Comment</button>
+                
+                
+                </form>
+                
+            </div>
+            
+            
+            
+        </div>
+        <div class="blog-right">
+            <h3> Conducted By - </h3>
+            <div>
+                <span>ROHAN</span>
+                <span>24</span>
+            </div>
+            <div>
+                <span>Dilip</span>
+                <span>26</span>
+            </div>
+            <div>
+                <span> No of students_-_</span>
+                <span>36</span>
+            </div>
+            <div>
+                <span> - </span>
+                <span>-</span>
+            </div>
+        </div>
+    
+    </div>
+
+    
+    
+</section>
+
+
+    
+
+    
+
+<!-----Footer------>
+    
+<section class="footer"">
+    <h4>About us</h4>
+        <p>CRE@TED BY SUYOG S@BLE <br> ROLL NUMBER - 38023  <br> E-mail - suyogsable3@gmail.com
+        </p>
+    
+    
+</section>
+                        
+
+
+
+    
+    
+   
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
+    const menuIcon = document.querySelector(".fa-bars");
+    const closeIcon = document.querySelector(".fa-times");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuIcon.addEventListener("click", function () {
+        navLinks.style.display = "block";
+        menuIcon.style.display = "none";
+        closeIcon.style.display = "block";
+    });
+
+    closeIcon.addEventListener("click", function () {
+        navLinks.style.display = "none";
+        menuIcon.style.display = "block";
+        closeIcon.style.display = "none";
+    });
+</script>
+
+    
+</body>    
+</html>

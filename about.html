@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>suyog sable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+<section class= "sub-header">
+    <nav>
+        <a href= "index.html"><img src="images/siws5.png"></a>
+        <div class ="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+
+
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>B.Sc. Computer Science</h1>
+    
+</section>
+    
+    
+    
+    
+<!----about us section------->
+    
+<section class="about-us">
+    <div class = "row">
+        <div class="about-col">
+            <h1> About the Department</h1>
+            <p>The Department of Computer Science was established in the year 1999 with an intake of 48 seats as part of science stream. In the academic year 2017, Computer Science has become a separate Self-Financing program by the University of Mumbai with an intake of 48 seats.
+
+The Department of Computer Science is well equipped with highly qualified teaching faculty to impart budding technocrats an insight into the world of computers, its applications, and latest developments in the industry, through professional engagements, which are in sync with business environment. B.Sc. in Computer Science is a three-year undergraduate degree course that deals with the principles and applications of the computer.
+
+The program equips students with skills in designing and developing advanced software systems. Students can explore conceptual underpinnings of Computer Science – fundamental algorithms, data structures, programming languages, automation theory, computer organization, databases, operating systems and software engineering techniques. The program provides rich set of electives which culminate in the career path in the field of: Application Development, Multimedia and Animation and Machine Learning.
+
+The program creates opportunities of hands-on learning through projects and gives knowledge and practical experience of the latest technologies.</p>
+            <a href="" class="hero-btn red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="images/computerlab.jpg">
+        </div>
+    </div>
+    
+    
+</section>
+    
+
+<!-----Footer------>
+    
+<section class="footer"">
+    <h4>About us</h4>
+        <p>CRE@TED BY SUYOG S@BLE <br> ROLL NUMBER - 38023  <br> E-mail - suyogsable3@gmail.com
+        </p>
+    
+    
+</section>
+                        
+
+
+
+    
+    
+   
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
+    const menuIcon = document.querySelector(".fa-bars");
+    const closeIcon = document.querySelector(".fa-times");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuIcon.addEventListener("click", function () {
+        navLinks.style.display = "block";
+        menuIcon.style.display = "none";
+        closeIcon.style.display = "block";
+    });
+
+    closeIcon.addEventListener("click", function () {
+        navLinks.style.display = "none";
+        menuIcon.style.display = "block";
+        closeIcon.style.display = "none";
+    });
+</script>
+
+    
+</body>    
+</html>
